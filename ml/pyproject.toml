@@ -1,0 +1,22 @@
+[project]
+name = "ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Diego Neves - lnx", email = "pdcassiano@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "xy>=0.0.5",
+]
+
+[project.scripts]
+ml = "ml:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
